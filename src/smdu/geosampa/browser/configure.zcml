@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+  <browser:page
+      class=".person.PersonForm"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      layer="smdu.geosampa.interfaces.IBrowserLayer"
+      name="cadastro-pessoa"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      class=".parklet.ParkletForm"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      layer="smdu.geosampa.interfaces.IBrowserLayer"
+      name="cadastro-parklet"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      class=".greenarea.GreenAreaForm"
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      layer="smdu.geosampa.interfaces.IBrowserLayer"
+      name="cadastro-area-verde"
+      permission="zope2.View"
+      />
+
+</configure>
